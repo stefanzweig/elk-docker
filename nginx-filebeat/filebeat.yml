@@ -12,6 +12,19 @@ filebeat:
   prospectors:
     -
       paths:
+        - "/tmp/logs/first/test.log"
+      fields:
+        input_type: log
+        tag: first
+
+    -
+      paths:
+        - "/tmp/logs/second/test.log"
+      fields:
+        tag: second
+
+    -
+      paths:
         - /var/log/syslog
         - /var/log/auth.log
       document_type: syslog

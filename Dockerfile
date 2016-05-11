@@ -46,6 +46,7 @@ RUN apt-get update -qq \
  && apt-get install -qqy \
 		elasticsearch=${ES_VERSION} \
 		openjdk-7-jdk \
+		vim \
  && apt-get clean
 
 

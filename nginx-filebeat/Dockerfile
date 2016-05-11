@@ -21,6 +21,7 @@ ENV REFRESHED_AT 2015-11-28
 
 RUN apt-get update -qq \
  && apt-get install -qqy curl \
+ && apt-get install -qqy vim \
  && apt-get clean
 
 RUN curl -L -O https://download.elastic.co/beats/filebeat/filebeat_1.0.1_amd64.deb \
